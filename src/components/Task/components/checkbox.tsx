@@ -4,17 +4,16 @@ import { useId } from 'react'
 
 interface Props {
   isCompleted: boolean
-  taskId: number
-  onClick: Function
+  updateTask: () => void
 }
 
-export function Checkbox({ isCompleted, taskId, onClick }: Props) {
+export function Checkbox({ isCompleted, updateTask }: Props) {
   const id = useId()
   return (
     <>
       <input
         className={style.input}
-        onChange={event => onClick(taskId, event.target.checked)}
+        onClick={() => updateTask()}
         type="checkbox"
         name="checkbox"
         checked={isCompleted}

@@ -14,7 +14,7 @@
   background-color: var(--gray-500);
 }
 
-.markTask{
+.markTask {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,7 +28,7 @@
   cursor: pointer;
 }
 
-.removeButton:hover{
+.removeButton:hover {
   color: var(--danger);
 }
 
@@ -55,16 +55,20 @@ labelCheck {
   background-color: var(--blue-dark-20);
 }
 
-input:checked + .labelCheck .checkContainer {
+input:checked+.labelCheck .checkContainer {
   border: 2px solid var(--purple-dark);
   background: var(--purple-dark);
 }
 
-input:checked + .labelCheck:hover .checkContainer {
+input:checked+.labelCheck:hover .checkContainer {
   border: 2px solid var(--purple);
   background: var(--purple);
 }
 
-.labelCheck .checkContainer > svg {
+.labelCheck .checkContainer>svg {
   color: var(--gray-100);
 }
+
+/* .tachado {
+  text-decoration: line-through;
+} */
